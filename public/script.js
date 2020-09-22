@@ -8,16 +8,16 @@ const muteBtn = document.getElementById("mute-btn");
 const muteSpan = document.getElementById("mute-span");
 const stopButton = document.getElementById("stop-video");
 const stopSpan = document.getElementById("span-stopVideo");
-const myPeer = new Peer(undefined, {
-  host: "/",
-  port: "3001",
-});
-
 // const myPeer = new Peer(undefined, {
-//   path: "/peerjs",
 //   host: "/",
-//   port: "443",
+//   port: "3001",
 // });
+
+const myPeer = new Peer(undefined, {
+  path: "/peerjs",
+  host: "/",
+  port: "443",
+});
 
 const myVideo = document.createElement("video");
 myVideo.muted = true;
