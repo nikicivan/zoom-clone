@@ -10,7 +10,7 @@ const stopButton = document.getElementById("stop-video");
 const stopSpan = document.getElementById("span-stopVideo");
 const myPeer = new Peer(undefined, {
   host: "/",
-  port: "443",
+  port: "3001",
 });
 
 // const myPeer = new Peer(undefined, {
