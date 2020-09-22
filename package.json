@@ -4,8 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "heroku-postbuild": "peerjs --port 3001"
+    "start": "peerjs --port 3001 && node server.js"
   },
   "author": "",
   "license": "ISC",
