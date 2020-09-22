@@ -1,3 +1,5 @@
+const { PeerServer } = require("peer");
+
 const socket = io("/");
 const videoGrid = document.getElementById("video-grid");
 let msg = document.getElementById("chat-message");
@@ -8,9 +10,15 @@ const muteBtn = document.getElementById("mute-btn");
 const muteSpan = document.getElementById("mute-span");
 const stopButton = document.getElementById("stop-video");
 const stopSpan = document.getElementById("span-stopVideo");
+// const myPeer = new Peer(undefined, {
+//   host: "/",
+//   port: "3001",
+// });
+
 const myPeer = new Peer(undefined, {
+  path: "/peerjs",
   host: "/",
-  port: "3001",
+  port: "443",
 });
 
 const myVideo = document.createElement("video");
