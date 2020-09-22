@@ -1,5 +1,3 @@
-const { PeerServer } = require("peer");
-
 const socket = io("/");
 const videoGrid = document.getElementById("video-grid");
 let msg = document.getElementById("chat-message");
