@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="icon"
+      type="image/png"
+      href="https://i.pcmag.com/imagery/reviews/05fRE6utWAtXmByTrwqgdcU-9..1569481702.jpg"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap"
       rel="stylesheet"
     />
@@ -18,11 +23,15 @@
     <script src="/socket.io/socket.io.js" defer></script>
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
-    <title>Document</title>
+    <title>Zoom Clone</title>
   </head>
   <body>
     <div class="main">
       <div class="main__left">
+        <button class="invitationBtn" id="createInvitationBtn">
+          Create invitation
+        </button>
+        <h3 id="main__leftInfo" class="main__leftInfo"></h3>
         <div class="main__videos">
           <div id="video-grid"></div>
         </div>

@@ -8,6 +8,8 @@ const muteBtn = document.getElementById("mute-btn");
 const muteSpan = document.getElementById("mute-span");
 const stopButton = document.getElementById("stop-video");
 const stopSpan = document.getElementById("span-stopVideo");
+const createInvitationBtn = document.getElementById("createInvitationBtn");
+const infoText = document.getElementById("main__leftInfo");
 // const myPeer = new Peer(undefined, {
 //   host: "/",
 //   port: "3001",
@@ -121,6 +123,14 @@ const stopPlayVideo = () => {
   }
 };
 
+const passId = (e) => {
+  infoText.textContent =
+    `Send url: https://zoom-clone-by-ivan.herokuapp.com/${ROOM_ID}`;
+  createInvitationBtn.classList.add("hidden");
+  console.log(infoText);
+};
+
 msg.addEventListener("change", textInput);
 microphone.addEventListener("click", muteUnmute);
 video.addEventListener("click", stopPlayVideo);
+createInvitationBtn.addEventListener("click", passId);
